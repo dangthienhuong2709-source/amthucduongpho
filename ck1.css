@@ -1,0 +1,207 @@
+/* GLOBAL FONT */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #f7f7f7;
+  color: #333;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+/* GLASS NAVBAR */
+#myNavbar {
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.65) !important;
+  border-bottom: 1px solid rgba(255,255,255,0.35);
+  padding: 8px 0;
+}
+#myNavbar a {
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+/* HEADER BACKGROUND */
+.bgimg-hero {
+  background:
+    linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.55)),
+    url("https://img.thuthuatphanmem.vn/uploads/2018/09/26/hinh-anh-dep-mot-goc-pho-co-ha-noi-nhon-nhip-ve-toi_053443845.jpg")
+    center/cover no-repeat;
+  height: 80vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-title {
+  font-size: 48px;
+  font-weight: 800;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+.hero-sub {
+  color: #ffe;
+  font-size: 18px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* TITLE */
+.section-title {
+  font-size: 32px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+/* MENU CARD */
+.menu-card img {
+  width: 100%;
+  border-radius: 12px 12px 0 0;
+}
+.menu-card .w3-card {
+  border-radius: 12px;
+  transition: 0.2s;
+}
+.menu-card .w3-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 10px 28px rgba(0,0,0,0.18);
+}
+.price {
+  font-weight: 700;
+  color: #ff416c;
+}
+
+/* DONATE BOX */
+.donate-box {
+  background: white;
+  padding: 28px;
+  width: 520px;
+  max-width: 90%;
+  margin: 25px auto;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+  text-align: center;
+}
+
+/* GIF DONATE */
+.donate-bin-gif {
+  width: 150px;
+  height: auto;
+  display: block;
+  margin: 0 auto 15px auto;
+  border-radius: 12px;
+}
+
+/* DONATE BUTTONS */
+.donate-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.donate-buttons button {
+  background: linear-gradient(135deg, #ff5e9c, #ff2364);
+  border: none;
+  padding: 12px 20px;
+  border-radius: 9px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  transition: .15s;
+  box-shadow: 0 4px 12px rgba(255, 76, 120, 0.32);
+}
+
+/* VIDEO + AUDIO SECTION */
+.video-box {
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 10px 22px rgba(0,0,0,0.15);
+}
+.video-box iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  border-radius: 12px;
+}
+.audio-player {
+  margin-top: 15px;
+  width: 100%;
+}
+
+/* POPUP */
+.popup {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  justify-content: center;
+  align-items: center;
+}
+.popup-content {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  width: 300px;
+  text-align: center;
+}
+.popup-content button {
+  background: #ff416c;
+  color: #fff;
+  padding: 8px 18px;
+  border: none;
+  border-radius: 6px;
+}
+
+
+/* ----------------------------------------- */
+/* 📱 RESPONSIVE FOR TABLET & MOBILE */
+/* ----------------------------------------- */
+
+/* Tablet */
+@media (max-width: 900px) {
+  .hero-title {
+    font-size: 36px;
+  }
+  .hero-sub {
+    font-size: 16px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .bgimg-hero {
+    height: 65vh;
+  }
+
+  .hero-title {
+    font-size: 28px;
+  }
+
+  .section-title {
+    font-size: 26px;
+  }
+
+  .donate-bin-gif {
+    width: 120px;
+  }
+
+  .donate-buttons button {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+
+  .donate-box {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .video-box {
+    padding: 15px;
+  }
+}
